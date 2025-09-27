@@ -14,7 +14,7 @@ const uploadOnCloudinary = async (localFilePath) => {
     });
     // console.log("file is uploaded on cloundinary", response.url);
     fs.unlinkSync(localFilePath);
-    console.log(response);
+    // console.log(response);
     return response;
   } catch (error) {
     fs.unlinkSync(localFilePath); //remove temp file from local storage
